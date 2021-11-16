@@ -2,4 +2,7 @@
 	name = Luchao Qi
 	email = lc.qi@outlook.com
 [commit]
-	template = ~/.gitmessage
+  	template = ~/.gitmessage
+[init]
+	# https://pre-commit.com/#automatically-enabling-pre-commit-on-repositories
+	templateDir = ~/.git-template

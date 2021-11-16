@@ -1,0 +1,60 @@
+# to enable 
+# `pip install pre-commit && pre-commit install && pre-commit run --all-files`
+# optional: pre-commit autoupdate
+# OR https://pre-commit.com/#automatically-enabling-pre-commit-on-repositories
+# refs
+# https://github.com/mCodingLLC/pre-commit-example-project/blob/master/.pre-commit-config.yaml
+# https://github.com/pre-commit/pre-commit-hooks/blob/master/.pre-commit-config.yaml
+# https://github.com/google/yapf/blob/main/.pre-commit-config.yaml
+
+repos:
+-   repo: https://github.com/psf/black
+    rev: 21.10b0
+    hooks:
+    -   id: black
+        args: [--safe]
+
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.0.1
+    hooks:
+      - id: trailing-whitespace
+      - id: check-docstring-first
+      - id: check-json
+      - id: check-added-large-files
+      - id: check-yaml
+      - id: debug-statements
+      - id: requirements-txt-fixer
+      - id: check-merge-conflict
+      - id: end-of-file-fixer
+      - id: sort-simple-yaml
+        language_version: python3
+
+-   repo: https://github.com/asottile/reorder_python_imports
+    rev: v2.6.0
+    hooks:
+    -   id: reorder-python-imports
+        args: [--py3-plus]
+
+-   repo: https://github.com/asottile/pyupgrade
+    rev: v2.29.1
+    hooks:
+    -   id: pyupgrade
+        args: [--py36-plus]
+
+-   repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v0.910-1
+    hooks:
+    -   id: mypy
+        files: ^src/
+        args: []
+
+# -   repo: meta
+#     hooks:
+#     -   id: check-hooks-apply
+#     -   id: check-useless-excludes
+
+# -   repo: https://github.com/PyCQA/flake8
+#     rev: 3.9.2
+#     hooks:
+#     -   id: flake8
+#         language_version: python3
