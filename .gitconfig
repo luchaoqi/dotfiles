@@ -3,6 +3,8 @@
 	email = lc.qi@outlook.com
 [commit]
   	template = ~/.gitmessage
+[core]
+	editor = vim
 [init]
 	# https://pre-commit.com/#automatically-enabling-pre-commit-on-repositories
 	templateDir = ~/.git-template

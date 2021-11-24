@@ -25,4 +25,14 @@ fi
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
+
 # export PATH=/mnt/local-raid10/workspace/lqi/software/:$PATH
+
+# enable zsh if it is installed
+# this should come after zsh PATH is set
+if [ -x "$(command -v zsh)" ] ; then
+    # set the default shell to zsh if it isn't currently set to zsh
+    if [ -z "$(echo $SHELL | grep zsh)" ]; then
+        zsh -l
+    fi
+fi
