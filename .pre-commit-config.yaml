@@ -1,4 +1,4 @@
-# to enable 
+# to enable
 # `pip install pre-commit && pre-commit install && pre-commit run --all-files`
 # optional: pre-commit autoupdate
 # OR https://pre-commit.com/#automatically-enabling-pre-commit-on-repositories

@@ -25,3 +25,13 @@ fi
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
+
+# enable zsh if it is not already enabled
+if [ -z "$ZSH_VERSION" ]; then
+    # If not running interactively, don't do anything
+    [ -z "$PS1" ] && return
+    # check for interactive shell
+    [ -n "$BASH_VERSION" ] && return
+    # enable zsh
+    zsh -l
+fi
