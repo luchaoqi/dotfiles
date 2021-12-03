@@ -1,0 +1,18 @@
+# # set PATH
+# software_path="/mnt/local-raid10/workspace/lqi/software"
+# # include executables
+# export PATH="$PATH:$software_path"
+# # also include bin recursively
+# for dir in $software_path/*/bin; do
+#     if [ -d "$dir" ]; then
+#     PATH="$PATH:$dir"
+#     fi
+# done
+
+
+
+
+
+
+
+

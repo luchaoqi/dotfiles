@@ -26,17 +26,18 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-# enable zsh if zsh is installed and it is not already enabled
-if [ -n "$ZSH_VERSION" ]; then
+# ---------------------------------------------------------------------------- #
+#                                  custom part                                 #
+# ---------------------------------------------------------------------------- #
+
+# if custom path file exists, add it to PATH
+if [ -f "$HOME/.path" ] ; then
+    . "$HOME/.path"
+fi
+
+# enable zsh if it is executable
+if [ -x "$(command -v zsh)" ]; then
     if [ -f "$HOME/.zshrc" ]; then
-    . "$HOME/.zshrc"
+        zsh -l
     fi
 fi
-# if [ -z "$ZSH_VERSION" ]; then
-#     # If not running interactively, don't do anything
-#     [ -z "$PS1" ] && return
-#     # check for interactive shell
-#     [ -n "$BASH_VERSION" ] && return
-#     # enable zsh
-#     zsh -l
-# fi
