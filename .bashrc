@@ -106,10 +106,10 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 # Execute bash_profile
-
-if [ -f ~/.bash_profile ]; then
-	. ~/.bash_profile
-fi
+# dont't do this if .bash_profile will source .bashrc otherwise infinite loop will occur
+# if [ -f ~/.bash_profile ]; then
+# 	. ~/.bash_profile
+# fi
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile

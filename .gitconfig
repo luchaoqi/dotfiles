@@ -4,7 +4,7 @@
 [commit]
   	template = ~/.gitmessage
 [core]
-	editor = vim
+	editor = vi
 [init]
 	# https://pre-commit.com/#automatically-enabling-pre-commit-on-repositories
 	templateDir = ~/.git-template
