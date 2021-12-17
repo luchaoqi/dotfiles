@@ -111,7 +111,7 @@ if [ -x "$(command -v zsh)" ]; then
     plugins=(zsh-completions zsh-autosuggestions zsh-syntax-highlighting zsh-history-substring-search)
     for plugin in $plugins; do
         if [ ! -d "$ZSH_CUSTOM/plugins/$plugin" ]; then
-            git clone "git@github.com:zsh-users/$plugin.git" "$ZSH_CUSTOM/plugins/$plugin"
+            git clone "https://github.com/zsh-users/$plugin" "$ZSH_CUSTOM/plugins/$plugin"
         fi
     done
 fi
