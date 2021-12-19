@@ -82,6 +82,16 @@ plugins=(
     zsh-history-substring-search
     )
 
+# automatically starts tmux if it is installed
+# note that any oh-my-zsh config needs to be loaded before sourcing $ZSH/oh-my-zsh.sh
+# https://stackoverflow.com/a/15882090/11964524
+# there is a bug in zsh after adding tmux (regardless of the order) to plugins
+# so I commented out the following line
+# if [ -x "$(command -v tmux)" ]; then
+#     ZSH_TMUX_AUTOSTART=true
+# fi
+
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
