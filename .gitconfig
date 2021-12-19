@@ -1,10 +1,16 @@
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
 [user]
 	name = Luchao Qi
 	email = lc.qi@outlook.com
 [commit]
   	template = ~/.gitmessage
-[core]
-	editor = vi
 [init]
 	# https://pre-commit.com/#automatically-enabling-pre-commit-on-repositories
 	templateDir = ~/.git-template
+[core]
+	editor = vi
+	excludesfile = ~/.gitignore_global
