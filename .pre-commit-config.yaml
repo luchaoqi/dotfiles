@@ -21,6 +21,7 @@ repos:
       - id: check-docstring-first
       - id: check-json
       - id: check-added-large-files
+        args: ['--maxkb=1024']
       - id: check-yaml
       - id: debug-statements
       - id: requirements-txt-fixer
@@ -47,6 +48,11 @@ repos:
     -   id: mypy
         files: ^src/
         args: []
+
+- repo: https://github.com/hadialqattan/pycln
+  rev: v1.1.0
+  hooks:
+    - id: pycln
 
 # -   repo: meta
 #     hooks:
