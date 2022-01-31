@@ -1,4 +1,4 @@
-# to enable 
+# to enable
 # `pip install pre-commit && pre-commit install && pre-commit run --all-files`
 # optional: pre-commit autoupdate
 # OR https://pre-commit.com/#automatically-enabling-pre-commit-on-repositories
@@ -9,13 +9,13 @@
 
 repos:
 -   repo: https://github.com/psf/black
-    rev: 21.10b0
+    rev: 22.1.0
     hooks:
     -   id: black
         args: [--safe]
 
 -   repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.0.1
+    rev: v4.1.0
     hooks:
       - id: trailing-whitespace
       - id: check-docstring-first
@@ -32,30 +32,32 @@ repos:
 #                                python-related                                #
 # ---------------------------------------------------------------------------- #
 -   repo: https://github.com/asottile/reorder_python_imports
-    rev: v2.6.0
+    rev: v2.7.1
     hooks:
     -   id: reorder-python-imports
         args: [--py3-plus]
+        types: [python]
 
 -   repo: https://github.com/asottile/pyupgrade
-    rev: v2.29.1
+    rev: v2.31.0
     hooks:
     -   id: pyupgrade
         args: [--py36-plus]
+        types: [python]
 
 -   repo: https://github.com/pre-commit/mirrors-mypy
-    rev: v0.910-1
+    rev: v0.931
     hooks:
     -   id: mypy
         files: ^src/
         args: []
+        types: [python]
 # ---------------------------------------------------------------------------- #
 #                                   R-related                                  #
 # ---------------------------------------------------------------------------- #
-repos:
--   repo: https://github.com/lorenzwalthert/pre-commit-hooks
-    rev: v0.0.0.9016
-    hooks: 
+-   repo: https://github.com/lorenzwalthert/precommit
+    rev: v0.2.2.9009
+    hooks:
     -   id: style-files
     -   id: parsable-R
     -   id: no-browser-statement
@@ -63,3 +65,13 @@ repos:
     -   id: roxygenize
     -   id: use-tidy-description
     -   id: lintr
+        args: [--warn_only]
+# ---------------------------------------------------------------------------- #
+#                                     shell                                    #
+# ---------------------------------------------------------------------------- #
+-   repo: https://github.com/shellcheck-py/shellcheck-py
+    rev: v0.8.0.3
+    hooks:
+    -   id: shellcheck
+        args: ["--severity=error"] # https://man.archlinux.org/man/community/shellcheck/shellcheck.1.en
+        types: [shell]
