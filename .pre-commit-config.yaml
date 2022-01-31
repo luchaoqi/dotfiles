@@ -1,4 +1,4 @@
-# to enable
+# to enable 
 # `pip install pre-commit && pre-commit install && pre-commit run --all-files`
 # optional: pre-commit autoupdate
 # OR https://pre-commit.com/#automatically-enabling-pre-commit-on-repositories
@@ -21,7 +21,6 @@ repos:
       - id: check-docstring-first
       - id: check-json
       - id: check-added-large-files
-        args: ['--maxkb=1024']
       - id: check-yaml
       - id: debug-statements
       - id: requirements-txt-fixer
@@ -29,7 +28,9 @@ repos:
       - id: end-of-file-fixer
       - id: sort-simple-yaml
         language_version: python3
-
+# ---------------------------------------------------------------------------- #
+#                                python-related                                #
+# ---------------------------------------------------------------------------- #
 -   repo: https://github.com/asottile/reorder_python_imports
     rev: v2.6.0
     hooks:
@@ -48,19 +49,17 @@ repos:
     -   id: mypy
         files: ^src/
         args: []
-
-- repo: https://github.com/hadialqattan/pycln
-  rev: v1.1.0
-  hooks:
-    - id: pycln
-
-# -   repo: meta
-#     hooks:
-#     -   id: check-hooks-apply
-#     -   id: check-useless-excludes
-
-# -   repo: https://github.com/PyCQA/flake8
-#     rev: 3.9.2
-#     hooks:
-#     -   id: flake8
-#         language_version: python3
+# ---------------------------------------------------------------------------- #
+#                                   R-related                                  #
+# ---------------------------------------------------------------------------- #
+repos:
+-   repo: https://github.com/lorenzwalthert/pre-commit-hooks
+    rev: v0.0.0.9016
+    hooks: 
+    -   id: style-files
+    -   id: parsable-R
+    -   id: no-browser-statement
+    -   id: readme-rmd-rendered
+    -   id: roxygenize
+    -   id: use-tidy-description
+    -   id: lintr
