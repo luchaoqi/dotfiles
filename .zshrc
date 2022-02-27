@@ -74,7 +74,7 @@ ZSH_THEME="jtriley"
 plugins=(
     git
     sudo
-    copydir
+    copypath
     dirhistory
     zsh-completions
     zsh-autosuggestions
