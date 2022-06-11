@@ -1,4 +1,5 @@
-# # set PATH
+# # this file is sourced in bashe_profile
+# # used to set customized PATH
 # software_path="/mnt/local-raid10/workspace/lqi/software"
 # # include executables
 # export PATH="$PATH:$software_path"
