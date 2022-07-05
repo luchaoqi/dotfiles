@@ -49,8 +49,8 @@ repos:
     rev: v2.1.0
     hooks:
     -   id: doctoc
-        args: ["--maxlevel=1","--notitle"]
-        # args: ["--title=Table of Contents","--maxlevel=1"]
+        args: ["--title=Table of Contents"]
+        # args: ["--maxlevel=1","--notitle"]
 
 # # conflict with doctoc
 # -   repo: https://github.com/igorshubovych/markdownlint-cli
