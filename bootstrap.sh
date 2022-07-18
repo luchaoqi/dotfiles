@@ -86,16 +86,6 @@ else
     fi
 fi
 
-# # git clone tmux config if tmux if installed
-# if [ -x "$(command -v tmux)" ]; then
-#     if [ ! -d $HOME/.tmux ]; then
-#         echo "cloning tmux config"
-#         git clone https://github.com/gpakosz/.tmux.git $HOME/.tmux
-#         ln -s -f $HOME/.tmux/.tmux.conf $HOME/.tmux.conf
-#         cp $HOME/.tmux/.tmux.conf.local $HOME/.tmux.conf.local
-#     fi
-# fi
-
 # install zsh and oh-my-zsh if not installed
 if [ -x "$(command -v zsh)" ]; then
     echo "zsh is already installed"
@@ -118,3 +108,19 @@ if [ -x "$(command -v zsh)" ]; then
         fi
     done
 fi
+
+# uncomment to install poetry
+
+# if [ -x "$(command -v poetry)" ]; then
+#     echo "poetry is already installed"
+# else
+#     echo "installing poetry without root permission"
+#     if [ -x "$(command -v curl)" ]; then
+#         sh -c "$(curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -)"
+#         # Oh-My-Zsh
+#         mkdir $ZSH_CUSTOM/plugins/poetry
+#         poetry completions zsh > $ZSH_CUSTOM/plugins/poetry/_poetry
+#     else
+#         echo "cannot install poetry, please install poetry manually"
+#     fi
+# fi
