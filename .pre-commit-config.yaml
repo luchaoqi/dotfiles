@@ -1,3 +1,5 @@
+#!/usr/bin/zsh # adding this to pass the pre-commit test (SC2148 (error) from shellcheck)
+
 # to enable
 # `pip install pre-commit && pre-commit install && pre-commit run --all-files`
 # optional: pre-commit autoupdate
@@ -39,6 +41,7 @@ repos:
     -   id: shellcheck
         args: ["--severity=error"]  # error/warning/info/disabled
         types: [shell]
+        # exclude: ~/.zshrc
 
 # ---------------------------------------------------------------------------- #
 #                                   markdown                                   #
