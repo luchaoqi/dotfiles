@@ -76,7 +76,6 @@ else
 fi
 
 # install tmux if not installed
-# note that the script will also htop if it is not installed
 if [ -x "$(command -v tmux)" ]; then
     echo "tmux is already installed"
 else
