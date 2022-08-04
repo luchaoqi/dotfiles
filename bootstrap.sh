@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 # may try chezmoi in the future
-# please make sure the following softwares are installed before running:
+# several pre-req:
 # pip curl wget
+# update zsh version in gist script at line 37
 
 # move old dotfiles to backup directory
 mkdir -p ~/dotfiles_backup
