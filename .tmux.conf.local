@@ -1,0 +1,22 @@
+# tree view, note that t is binded to view TIME
+unbind v
+bind v choose-tree
+
+# split current window horizontally
+bind - split-window -v -c "#{pane_current_path}"
+# split current window vertically
+bind _ split-window -h -c "#{pane_current_path}"
+
+# pane navigation
+
+# Use Alt-vim keys without prefix key to switch panes
+bind -n M-h select-pane -L
+bind -n M-j select-pane -D
+bind -n M-k select-pane -U
+bind -n M-l select-pane -R
+
+# Use Alt-arrow keys without prefix key to switch panes
+bind -n M-Left select-pane -L
+bind -n M-Right select-pane -R
+bind -n M-Up select-pane -U
+bind -n M-Down select-pane -D
