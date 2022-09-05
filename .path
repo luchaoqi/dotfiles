@@ -9,10 +9,6 @@
 #     PATH="$PATH:$dir"
 #     fi
 # done
-
-
-
-
-
-
+#
+# for regular PATH some are already included in the profile file e.g.
 # export PATH=$PATH:$HOME/local/bin
