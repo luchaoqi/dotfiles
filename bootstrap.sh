@@ -92,11 +92,12 @@ fi
 if [ -x "$(command -v zsh)" ]; then
     echo "zsh is already installed"
 else
-    echo "installing zsh without root permission"
+    echo "installing zsh/omz without root permission"
     if [ -x "$(command -v curl)" ]; then
         sh -c "$(curl -fsSL https://gist.githubusercontent.com/luchaoqi/ed4a26dcd0dd61a169703496d310427c/raw/zsh_local_install.sh)"
+        sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
     else
-        echo "cannot install zsh, please install zsh manually"
+        echo "cannot install zsh/omz, please install manually"
     fi
 fi
 
