@@ -96,7 +96,6 @@ else
     if [ -x "$(command -v curl)" ]; then
         sh -c "$(curl -fsSL https://gist.githubusercontent.com/luchaoqi/ed4a26dcd0dd61a169703496d310427c/raw/zsh_local_install.sh)"
         git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
-        # chsh -s $(which zsh)
     else
         echo "cannot install zsh/omz, please install manually"
     fi
@@ -112,6 +111,8 @@ if [ -x "$(command -v zsh)" ]; then
         fi
     done
 fi
+
+# chsh -s $(which zsh)
 
 # uncomment to install poetry
 
