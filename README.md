@@ -5,3 +5,5 @@
 [Compiling and installing Zsh without root privileges on Stanford's Sherlock (https://sherlock.stanford.edu) for use in tmux](https://gist.github.com/mgbckr/b8dc6d7d228e25325b6dfaa1c4018e78)
 
 https://github.com/xxh/xxh
+
+Configure `bash_profile` for `bash` and `zsh_profile` for `zsh`.

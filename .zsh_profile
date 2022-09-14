@@ -1,0 +1,20 @@
+# Alias definitions.
+
+if [ -f ~/.aliases ]; then
+    . ~/.aliases
+fi
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+    export PATH="$HOME/bin:$PATH"
+fi
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/.local/bin" ] ; then
+    export PATH="$HOME/.local/bin:$PATH"
+fi
+
+# due to default shell might be zsh, if you find .path is not sourced, then add the following line
+# if [ -f ~/.path ]; then
+#     . ~/.path
+# fi
