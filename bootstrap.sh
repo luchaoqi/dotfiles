@@ -11,6 +11,7 @@ files=".aliases .path\
  .zshrc .zsh_profile\
  .gitconfig .gitmessage .gitignore_global\
  .vimrc\
+ .condarc\
  .tmux.conf .tmux.conf.local"
 for file in $files; do
     if [ -f $HOME/$file ] && [ ! -f $HOME/dotfiles_backup/$file ]; then
