@@ -1,0 +1,9 @@
+# Alias definitions.
+
+if [ -f ~/.aliases ]; then
+    . ~/.aliases
+fi
+
+if [ -f ~/.path ]; then
+    . ~/.path
+fi

@@ -6,9 +6,11 @@
 
 # move old dotfiles to backup directory
 mkdir -p ~/dotfiles_backup
-files=".aliases .path .bash_profile .bashrc\
+files=".aliases .path\
+ .bash_profile .bashrc\
+ .zshrc .zsh_profile\
  .gitconfig .gitmessage .gitignore_global\
- .vimrc .zshrc\
+ .vimrc\
  .tmux.conf .tmux.conf.local"
 for file in $files; do
     if [ -f $HOME/$file ] && [ ! -f $HOME/dotfiles_backup/$file ]; then

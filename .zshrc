@@ -121,12 +121,20 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Alias definitions.
 
-if [ -f ~/.aliases ]; then
-    . ~/.aliases
+if [ -f ~/.zsh_profile ]; then
+    . ~/.zsh_profile
 fi
 
-if [ -f ~/.profile ]; then
-    . ~/.profile
-fi
+# ---------------------------------------------------------------------------- #
+#                              UNC lab server only                             #
+# ---------------------------------------------------------------------------- #
+
+# if default shell is zsh, then source path
+
+# if [ -f ~/.path ]; then
+#     . ~/.path
+# fi
+
+# source /etc/profile.d/module.sh
+# module add anaconda
