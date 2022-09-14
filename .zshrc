@@ -130,11 +130,5 @@ fi
 #                              UNC lab server only                             #
 # ---------------------------------------------------------------------------- #
 
-# if default shell is zsh, then source path
-
-# if [ -f ~/.path ]; then
-#     . ~/.path
-# fi
-
 # source /etc/profile.d/module.sh
 # module add anaconda
