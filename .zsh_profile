@@ -1,9 +1,11 @@
-# Alias definitions.
+# ---------------------------------------------------------------------------- #
+#             if default shell is zsh, uncomment the following lines           #
+# ---------------------------------------------------------------------------- #
 
-if [ -f ~/.aliases ]; then
-    . ~/.aliases
-fi
+# if [ -f ~/.aliases ]; then
+#     . ~/.aliases
+# fi
 
-if [ -f ~/.path ]; then
-    . ~/.path
-fi
+# if [ -f ~/.path ]; then
+#     . ~/.path
+# fi
