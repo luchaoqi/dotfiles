@@ -1,10 +1,12 @@
+if [ -f ~/.aliases ]; then
+
+    . ~/.aliases
+
+fi
+
 # ---------------------------------------------------------------------------- #
 #             if default shell is zsh, uncomment the following lines           #
 # ---------------------------------------------------------------------------- #
-
-# if [ -f ~/.aliases ]; then
-#     . ~/.aliases
-# fi
 
 # if [ -f ~/.path ]; then
 #     . ~/.path
