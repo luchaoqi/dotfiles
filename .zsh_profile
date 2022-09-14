@@ -11,3 +11,6 @@ fi
 # if [ -f ~/.path ]; then
 #     . ~/.path
 # fi
+
+# -------------------- remove duplicated entries in $PATH -------------------- #
+typeset -U path
