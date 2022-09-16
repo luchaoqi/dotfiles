@@ -1,4 +1,6 @@
 alias untar='tar -xvf'
+alias du='du -sh -- *'
+alias df='df -h'
 alias mv='mv -i'
 alias l='ls -alFh --color'
 alias ll='la -alrtFh --color'
