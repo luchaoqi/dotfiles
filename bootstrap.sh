@@ -115,6 +115,27 @@ if [ -x "$(command -v zsh)" ]; then
     done
 fi
 
+# nvtop if not installed
+# https://github.com/Syllo/nvtop#nvtop-build
+
+# if [ -x "$(command -v nvtop)" ]; then
+#     echo "nvtop is already installed"
+# else
+#     echo "installing nvtop without root permission"
+#     dest=$HOME/software/nvtop
+#     if [ -x "$(command -v git)" ]; then
+#         git clone https://github.com/Syllo/nvtop.git
+#         mkdir -p nvtop/build && cd nvtop/build
+#         cmake ..
+#         make
+#         make DESTDIR=$dest install
+#         cd ../..
+#         rm -rf nvtop
+#     else
+#         echo "cannot install nvtop, please install manually"
+#     fi
+# fi
+
 # chsh -s $(which zsh)
 
 # uncomment to install poetry
