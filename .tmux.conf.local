@@ -1,6 +1,7 @@
 # tree view, note that t is binded to view TIME
-unbind v
-bind v choose-tree
+# default is w - no need to use v
+# unbind v
+# bind v choose-tree
 
 # split current window horizontally
 bind - split-window -v -c "#{pane_current_path}"

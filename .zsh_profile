@@ -1,16 +1,13 @@
 if [ -f ~/.aliases ]; then
-
     . ~/.aliases
-
 fi
 
-# ---------------------------------------------------------------------------- #
-#             if default shell is zsh, uncomment the following lines           #
-# ---------------------------------------------------------------------------- #
 
-# if [ -f ~/.path ]; then
-#     . ~/.path
-# fi
+# ------------- no need to source path if sourced in bash_profile ------------ #
+#               but here we remove duplicated entries at the end               #
+if [ -f ~/.path ]; then
+    . ~/.path
+fi
 
-# -------------------- remove duplicated entries in $PATH -------------------- #
 typeset -U path
+# ---------------------------------------------------------------------------- #
