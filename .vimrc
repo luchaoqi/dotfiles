@@ -1,3 +1,5 @@
+" Adjusted from https://missing.csail.mit.edu/2020/editors/
+
 " Comments in Vimscript start with a `"`.
 
 " If you open this file in Vim, it'll be syntax highlighted for you.
@@ -79,6 +81,27 @@ inoremap <Right> <ESC>:echoe "Use l"<CR>
 inoremap <Up>    <ESC>:echoe "Use k"<CR>
 inoremap <Down>  <ESC>:echoe "Use j"<CR>
 
+" Customization
+
+" https://stackoverflow.com/questions/99161/how-do-you-make-vim-unhighlight-what-you-searched-for
 " Clear the last used search pattern
 " <Ctrl-l> redraws the screen and removes any search highlighting.
 nnoremap <silent> <C-l> :nohl<CR><C-l>
+
+" vim-plug
+" Install vim-plug if not found
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+endif
+
+" Run PlugInstall if there are missing plugins
+autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+  \| PlugInstall --sync | source $MYVIMRC
+\| endif
+
+" plugins
+call plug#begin()
+Plug 'https://github.com/tpope/vim-commentary.git'
+" Plug 'wakatime/vim-wakatime'
+call plug#end()
