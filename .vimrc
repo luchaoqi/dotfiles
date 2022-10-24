@@ -103,5 +103,5 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 " plugins
 call plug#begin()
 Plug 'https://github.com/tpope/vim-commentary.git'
-" Plug 'wakatime/vim-wakatime'
+Plug 'wakatime/vim-wakatime'
 call plug#end()
