@@ -125,10 +125,3 @@ source $ZSH/oh-my-zsh.sh
 if [ -f ~/.zsh_profile ]; then
     . ~/.zsh_profile
 fi
-
-# ---------------------------------------------------------------------------- #
-#                              UNC lab server only                             #
-# ---------------------------------------------------------------------------- #
-
-# source /etc/profile.d/module.sh
-# module add anaconda
