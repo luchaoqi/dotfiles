@@ -91,24 +91,35 @@ else
     fi
 fi
 
-# install zsh and oh-my-zsh if not installed
+# install zsh if not installed
 if [ -x "$(command -v zsh)" ]; then
     echo "zsh is already installed"
 else
-    echo "installing zsh/omz without root permission"
+    echo "installing zsh without root permission"
     if [ -x "$(command -v curl)" ]; then
         sh -c "$(curl -fsSL https://gist.githubusercontent.com/luchaoqi/ed4a26dcd0dd61a169703496d310427c/raw/zsh_local_install.sh)"
+    else
+        echo "cannot install zsh, please install manually"
+    fi
+fi
+
+# install omz if not installed
+if [ -x "$(command -v omz)" ]; then
+    echo "omz is already installed"
+else
+    echo "installing omz without root permission"
+    if [ -x "$(command -v curl)" ]; then
         # The following git way doesn't work smoothly with tmux
         # git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
         sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
         cp ~/dotfiles/.zshrc ~
         cp ~/dotfiles/.zsh_profile ~
     else
-        echo "cannot install zsh/omz, please install manually"
+        echo "cannot install omz, please install manually"
     fi
 fi
 
-# add zsh plugins if zsh is installed
+# add zsh plugins
 if [ -x "$(command -v zsh)" ]; then
     echo "installing zsh plugins"
     plugins=(zsh-completions zsh-autosuggestions zsh-syntax-highlighting zsh-history-substring-search)
@@ -118,6 +129,8 @@ if [ -x "$(command -v zsh)" ]; then
         fi
     done
 fi
+
+source ~/.zshrc
 
 # nvtop if not installed
 # https://github.com/Syllo/nvtop#nvtop-build
