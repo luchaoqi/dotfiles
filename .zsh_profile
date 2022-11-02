@@ -2,6 +2,10 @@ if [ -f ~/.aliases ]; then
     . ~/.aliases
 fi
 
+# ----------------------- tmux attach if session exists ---------------------- #
+if [ -x "$(command -v tmux)" ]; then
+    tmux attach || tmux new
+fi
 
 # ------------- no need to source path if sourced in bash_profile ------------ #
 #               but here we remove duplicated entries at the end               #
