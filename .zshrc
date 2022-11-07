@@ -81,6 +81,7 @@ plugins=(
     zsh-autosuggestions
     zsh-syntax-highlighting # zsh-syntax-highlighting should come before zsh-history-substring-search
     zsh-history-substring-search
+    # wakatime # https://wakatime.com/terminal
     )
 
 # automatically starts tmux if it is installed
