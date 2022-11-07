@@ -16,6 +16,11 @@ fi
 typeset -U path
 # ---------------------------------------------------------------------------- #
 
+# automatically attach tmux session if it exists, otherwise create a new one
+if [ -x "$(command -v tmux)" ] && [ -z "$TMUX" ]; then
+    tmux attach || tmux new
+fi
+
 # ---------------------------------------------------------------------------- #
 #                              UNC lab server only                             #
 # ---------------------------------------------------------------------------- #
