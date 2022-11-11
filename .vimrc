@@ -83,11 +83,6 @@ inoremap <Down>  <ESC>:echoe "Use j"<CR>
 
 " Customization
 
-" https://stackoverflow.com/questions/99161/how-do-you-make-vim-unhighlight-what-you-searched-for
-" Clear the last used search pattern
-" <Ctrl-l> redraws the screen and removes any search highlighting.
-nnoremap <silent> <C-l> :nohl<CR><C-l>
-
 " vim-plug
 " Install vim-plug if not found
 if empty(glob('~/.vim/autoload/plug.vim'))
@@ -105,3 +100,11 @@ call plug#begin()
 Plug 'https://github.com/tpope/vim-commentary.git'
 Plug 'wakatime/vim-wakatime'
 call plug#end()
+
+" https://stackoverflow.com/questions/99161/how-do-you-make-vim-unhighlight-what-you-searched-for
+" Clear the last used search pattern
+" <Ctrl-l> redraws the screen and removes any search highlighting.
+nnoremap <silent> <C-l> :nohl<CR><C-l>
+
+" https://vi.stackexchange.com/questions/6468/cant-move-to-end-of-line-with-vim-on-cygwin
+set virtualedit+=onemore
