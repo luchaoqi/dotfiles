@@ -2,6 +2,9 @@ if [ -f ~/.aliases ]; then
     . ~/.aliases
 fi
 
+# https://unix.stackexchange.com/questions/167582/why-zsh-ends-a-line-with-a-highlighted-percent-symbol
+PROMPT_EOL_MARK=''
+
 # ------------- no need to source path if sourced in bash_profile ------------ #
 #               but here we remove duplicated entries at the end               #
 if [ -f ~/.path ]; then
