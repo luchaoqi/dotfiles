@@ -7,17 +7,22 @@ PROMPT_EOL_MARK=''
 
 # ------------- no need to source path if sourced in bash_profile ------------ #
 #               but here we remove duplicated entries at the end               #
+# ---------------------------------------------------------------------------- #
 if [ -f ~/.path ]; then
     . ~/.path
 fi
 
 typeset -U path
+
+# ---------------------------------------------------------------------------- #
+#                                     tmux                                     #
 # ---------------------------------------------------------------------------- #
 
-# automatically attach tmux session if it exists, otherwise create a new one
-if [ -x "$(command -v tmux)" ] && [ -z "$TMUX" ]; then
-    tmux attach || tmux new
-fi
+# # automatically attach | create tmux session
+# # no need for it now as it may cause problems with vscode
+# if [ -x "$(command -v tmux)" ] && [ -z "$TMUX" ]; then
+#     tmux attach || tmux new
+# fi
 
 # ---------------------------------------------------------------------------- #
 #                              UNC lab server only                             #
