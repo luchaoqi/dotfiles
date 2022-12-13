@@ -51,33 +51,6 @@ if ! echo $PATH | grep -q $HOME/local/bin; then
     export PATH=$PATH:$HOME/local/bin
 fi
 
-# install pre-commit if not installed
-if ! [ -x "$(command -v pre-commit)" ]; then
-    echo "pre-commit is not installed, installing pre-commit"
-    if [ -x "$(command -v pip)" ]; then
-        pip install pre-commit --user --no-cache-dir || echo "pip install pre-commit failed"
-    fi
-fi
-
-# automatically enabling pre-commit if pre-commit is installed
-if [ -x "$(command -v pre-commit)" ]; then
-    if [ -f $HOME/.git-template/hooks/pre-commit ]; then
-        echo "pre-commit is already enabled"
-    elif [ -x "$(command -v git)" ] && [ -x "$(command -v pre-commit)" ]; then
-        git config --global init.templatedir ~/.git-template
-        pre-commit init-templatedir ~/.git-template
-        echo "pre-commit is now enabled by default"
-    fi
-fi
-
-# install tldr without root permission if tldr is not installed
-if ! [ -x "$(command -v tldr)" ]; then
-    echo "installing tldr without root permission"
-    pip install tldr --user --no-cache-dir || echo "cannot install tldr, please install tldr manually"
-else
-    echo "tldr is already installed"
-fi
-
 # install tmux if not installed
 if [ -x "$(command -v tmux)" ]; then
     echo "tmux is already installed"
@@ -131,6 +104,38 @@ if [ -x "$(command -v zsh)" ]; then
 fi
 
 source ~/.zshrc
+
+
+# install pre-commit if not installed
+if ! [ -x "$(command -v pre-commit)" ]; then
+    echo "pre-commit is not installed, installing pre-commit"
+    if [ -x "$(command -v pip)" ]; then
+        pip install pre-commit --user --no-cache-dir || echo "pip install pre-commit failed"
+    fi
+fi
+
+# automatically enabling pre-commit if pre-commit is installed
+if [ -x "$(command -v pre-commit)" ]; then
+    if [ -f $HOME/.git-template/hooks/pre-commit ]; then
+        echo "pre-commit is already enabled"
+    elif [ -x "$(command -v git)" ] && [ -x "$(command -v pre-commit)" ]; then
+        git config --global init.templatedir ~/.git-template
+        pre-commit init-templatedir ~/.git-template
+        echo "pre-commit is now enabled by default"
+    fi
+fi
+
+# install tldr without root permission if tldr is not installed
+if ! [ -x "$(command -v tldr)" ]; then
+    echo "installing tldr without root permission"
+    pip install tldr --user --no-cache-dir || echo "cannot install tldr, please install tldr manually"
+else
+    echo "tldr is already installed"
+fi
+
+# gdown
+# pip install gdown
+
 
 # nvitop
 # https://github.com/XuehaiPan/nvitop
