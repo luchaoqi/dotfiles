@@ -1,3 +1,4 @@
+alias deconda='conda deactivate'
 alias untar='tar -xvf'
 alias du='du -sh -- *'
 alias df='df -h'
