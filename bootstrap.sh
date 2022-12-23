@@ -103,7 +103,7 @@ if [ -x "$(command -v zsh)" ]; then
     done
 fi
 
-source ~/.zshrc
+# source ~/.zshrc
 
 
 # install pre-commit if not installed
