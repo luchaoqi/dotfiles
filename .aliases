@@ -1,4 +1,4 @@
-# unalias commend if not happy with it
+alias ta='tmux a'
 alias deconda='conda deactivate'
 alias untar='tar -xvf'
 alias du='du -sh -- *'
