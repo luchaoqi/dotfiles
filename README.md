@@ -1,6 +1,8 @@
 Configure `bash_profile` for `bash` and `zsh_profile` for `zsh`.
 
+# To do
 
+create local `.vimrc.local` file to be sourced for `.vimrc`. the local file should contain all the customizations.
 
 # Resources
 
