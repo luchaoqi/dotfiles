@@ -2,7 +2,13 @@ Configure `bash_profile` for `bash` and `zsh_profile` for `zsh`.
 
 # To do
 
-create local `.vimrc.local` file to be sourced for `.vimrc`. the local file should contain all the customizations.
+[amix/vimrc: The ultimate Vim configuration (vimrc)](https://github.com/amix/vimrc)
+
+# Software
+
+[SFTP Drive | Map Remote Servers as Local Drives via SFTP | nsoftware](https://www.nsoftware.com/sftp/drive/)
+
+[TigerVNC](https://tigervnc.org/)
 
 # Resources
 
