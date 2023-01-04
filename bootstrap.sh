@@ -4,6 +4,11 @@
 # pip curl wget
 # update zsh version in gist script at line 37
 
+
+# ---------------------------------------------------------------------------- #
+#                                 config files                                 #
+# ---------------------------------------------------------------------------- #
+
 # move old dotfiles to backup directory
 mkdir -p ~/dotfiles_backup
 files=".aliases .path\
@@ -34,6 +39,23 @@ if [ -f ~/.bash_profile ]; then
     source ~/.bash_profile
 fi
 
+# ---------------------------------------------------------------------------- #
+#                              other files/scripts                             #
+# ---------------------------------------------------------------------------- #
+
+# if .local/bin is in PATH, cp files into .local/bin
+files="code"
+if echo $PATH | grep -q $HOME/.local/bin; then
+    for file in $files; do
+        if [ -f $HOME/dotfiles/$file ]; then
+            echo "Copying $file to ~/.local/bin"
+            cp $HOME/dotfiles/$file ~/.local/bin/$file
+        fi
+    done
+fi
+# ----------------------------------- done ----------------------------------- #
+
+
 # install pip if not installed
 if ! [ -x "$(command -v pip)" ]; then
     echo "pip is not installed, installing pip"
@@ -46,10 +68,6 @@ if ! [ -x "$(command -v pip)" ]; then
     fi
 fi
 
-# include local/bin in PATH if not already there
-if ! echo $PATH | grep -q $HOME/local/bin; then
-    export PATH=$PATH:$HOME/local/bin
-fi
 
 # install tmux if not installed
 if [ -x "$(command -v tmux)" ]; then
