@@ -6,6 +6,8 @@ Configure `bash_profile` for `bash` and `zsh_profile` for `zsh`.
 
 [ohmyzsh/plugins/thefuck at master · ohmyzsh/ohmyzsh](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/thefuck)
 
+[MichaelAquilina/zsh-you-should-use: 📎 ZSH plugin that reminds you to use existing aliases for commands you just typed](https://github.com/MichaelAquilina/zsh-you-should-use)
+
 # Software
 
 [SFTP Drive | Map Remote Servers as Local Drives via SFTP | nsoftware](https://www.nsoftware.com/sftp/drive/)
