@@ -4,6 +4,8 @@ Configure `bash_profile` for `bash` and `zsh_profile` for `zsh`.
 
 [amix/vimrc: The ultimate Vim configuration (vimrc)](https://github.com/amix/vimrc)
 
+[ohmyzsh/plugins/thefuck at master · ohmyzsh/ohmyzsh](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/thefuck)
+
 # Software
 
 [SFTP Drive | Map Remote Servers as Local Drives via SFTP | nsoftware](https://www.nsoftware.com/sftp/drive/)
