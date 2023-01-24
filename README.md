@@ -10,9 +10,12 @@ Configure `bash_profile` for `bash` and `zsh_profile` for `zsh`.
 
 # Software
 
+[TigerVNC](https://tigervnc.org/)
+
 [SFTP Drive | Map Remote Servers as Local Drives via SFTP | nsoftware](https://www.nsoftware.com/sftp/drive/)
 
-[TigerVNC](https://tigervnc.org/)
+[lapo-luchini/WindowsLayoutSnapshot: Windows app to remember + restore window positions](https://github.com/lapo-luchini/WindowsLayoutSnapshot)
+
 
 # Resources
 
