@@ -40,16 +40,17 @@ if [ -f ~/.bash_profile ]; then
 fi
 
 # ---------------------------------------------------------------------------- #
-#                              other files/scripts                             #
+#                                    scripts                                   #
 # ---------------------------------------------------------------------------- #
 
-# if .local/bin is in PATH, cp files into .local/bin
+# if .local/bin is in PATH, cp scripts into .local/bin
 files="code"
 if echo $PATH | grep -q $HOME/.local/bin; then
     for file in $files; do
         if [ -f $HOME/dotfiles/$file ]; then
             echo "Copying $file to ~/.local/bin"
             cp $HOME/dotfiles/$file ~/.local/bin/$file
+            chmod +x ~/.local/bin/$file
         fi
     done
 fi
