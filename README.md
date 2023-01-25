@@ -14,8 +14,7 @@ Configure `bash_profile` for `bash` and `zsh_profile` for `zsh`.
 
 [SFTP Drive | Map Remote Servers as Local Drives via SFTP | nsoftware](https://www.nsoftware.com/sftp/drive/)
 
-[lapo-luchini/WindowsLayoutSnapshot: Windows app to remember + restore window positions](https://github.com/lapo-luchini/WindowsLayoutSnapshot)
-
+[kangyu-california/PersistentWindows: fork of http://www.ninjacrab.com/persistent-windows/ with windows 10 update](https://github.com/kangyu-california/PersistentWindows)
 
 # Resources
 
