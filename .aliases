@@ -1,4 +1,4 @@
-alias ta='tmux a'
+alias ta='tmux a -d'
 alias deconda='conda deactivate'
 alias untar='tar -xvf'
 alias du='du -sh -- *'
