@@ -3,9 +3,8 @@
 # unbind v
 # bind v choose-tree
 
-# split current window horizontally
+# split current window with current path
 bind - split-window -v -c "#{pane_current_path}"
-# split current window vertically
 bind _ split-window -h -c "#{pane_current_path}"
 
 # pane navigation
@@ -36,3 +35,7 @@ set -g @continuum-restore 'on'
 # Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
 run '~/.tmux/plugins/tpm/tpm'
 # ---------------------------------------------------------------------------- #
+
+
+# remove left status bar
+set-option -g status-left ""
