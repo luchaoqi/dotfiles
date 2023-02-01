@@ -81,6 +81,12 @@ else
     else
         echo "cannot install tmux, please install tmux manually"
     fi
+    # install tmux plugin manager
+    if [ -x "$(command -v git)" ]; then
+        git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+    else
+        echo "cannot install tmux plugin manager, please install manually"
+    fi
 fi
 
 # install zsh if not installed
@@ -135,6 +141,8 @@ fi
 
 # automatically enabling pre-commit if pre-commit is installed
 if [ -x "$(command -v pre-commit)" ]; then
+    # update all pre-commit hooks
+    pre-commit autoupdate
     if [ -f $HOME/.git-template/hooks/pre-commit ]; then
         echo "pre-commit is already enabled"
     elif [ -x "$(command -v git)" ] && [ -x "$(command -v pre-commit)" ]; then
