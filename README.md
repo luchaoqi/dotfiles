@@ -14,9 +14,11 @@ Configure `bash_profile` for `bash` and `zsh_profile` for `zsh`.
 
 [amix/vimrc: The ultimate Vim configuration (vimrc)](https://github.com/amix/vimrc)
 
+add wakatime and thefuck into zsh/bootstrap
+
 [ohmyzsh/plugins/thefuck at master · ohmyzsh/ohmyzsh](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/thefuck)
 
-[MichaelAquilina/zsh-you-should-use: 📎 ZSH plugin that reminds you to use existing aliases for commands you just typed](https://github.com/MichaelAquilina/zsh-you-should-use)
+find shellcheck hook for pre-commit
 
 # Software
 
