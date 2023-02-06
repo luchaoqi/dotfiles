@@ -31,4 +31,5 @@ typeset -aU path
 # source /etc/profile.d/module.sh
 # module add anaconda
 
+# https://help.cs.unc.edu/en/blog/afstokens
 # kinit && aklog
