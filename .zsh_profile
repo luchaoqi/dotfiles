@@ -30,3 +30,5 @@ typeset -aU path
 
 # source /etc/profile.d/module.sh
 # module add anaconda
+
+# kinit && aklog
