@@ -18,11 +18,10 @@ typeset -aU path
 #                                     tmux                                     #
 # ---------------------------------------------------------------------------- #
 
-# # automatically attach | create tmux session
-# # no need for it now as it may cause problems with vscode
-# if [ -x "$(command -v tmux)" ] && [ -z "$TMUX" ]; then
-#     tmux attach || tmux new
-# fi
+# automatically attach if exists
+if [ -x "$(command -v tmux)" ] && [ "$TMUX" = "" ] && [ "$TERM_PROGRAM" != "vscode" ]; then
+    tmux attach -d
+fi
 
 # ---------------------------------------------------------------------------- #
 #                              UNC lab server only                             #
