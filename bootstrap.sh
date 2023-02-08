@@ -1,4 +1,5 @@
-#!/usr/bin/env bash
+#!/bin/sh
+# run with sh bootstrap.sh instead of bash
 # may try chezmoi in the future
 # several pre-req:
 # pip curl wget
