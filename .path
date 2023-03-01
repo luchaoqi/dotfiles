@@ -11,6 +11,12 @@
 # done
 #
 
+# ------------------------------- env variables ------------------------------ #
+
+# export TORCH_HOME=/playpen-nas-ssd/luchao/software/.cache/torch
+# export PIP_CACHE_DIR=/playpen-nas-ssd/luchao/software/.cache/pip
+
+# ---------------------------------------------------------------------------- #
 
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
