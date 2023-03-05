@@ -13,10 +13,10 @@
 # move old dotfiles to backup directory
 mkdir -p ~/dotfiles_backup
 files=".aliases .path\
- .bash_profile .bashrc\
+ .bashrc .bash_profile\
  .zshrc .zsh_profile\
  .gitconfig .gitmessage .gitignore_global\
- .vimrc\
+ .vimrc basic.vim\
  .condarc\
  .tmux.conf .tmux.conf.local"
 for file in $files; do
