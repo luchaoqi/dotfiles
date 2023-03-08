@@ -4,14 +4,14 @@
 # bind v choose-tree
 
 # check all current bindings with:
-# tmux list-keys
+# tmux list-keys (shortcut: C-a ? and then search with C-s)
 
 # ---------------------------------- window ---------------------------------- #
 
 # create new window with C-t like tabs
 bind -n C-t new-window
-# close pane with C-w
-bind -n C-w confirm-before -p "kill-pane #P? (y/n)" kill-pane # this is from tmux list-keys
+# close window with C-w
+bind -n C-w confirm-before -p "kill-window #W? (y/n)" kill-window # this is from tmux list-keys
 
 # move window left/right with Ctrl-Shift-Left/Right
 bind-key -n C-S-Left swap-window -d -t -1
