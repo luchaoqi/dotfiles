@@ -3,9 +3,25 @@
 # unbind v
 # bind v choose-tree
 
+# check all current bindings with:
+# tmux list-keys
+
+# ---------------------------------- window ---------------------------------- #
+
+# create new window with C-t like tabs
+bind -n C-t new-window
+# close pane with C-w
+bind -n C-w confirm-before -p "kill-pane #P? (y/n)" kill-pane # this is from tmux list-keys
+
+# move window left/right with Ctrl-Shift-Left/Right
+bind-key -n C-S-Left swap-window -d -t -1
+bind-key -n C-S-Right swap-window -d -t +1
+
 # split current window with current path
 bind - split-window -v -c "#{pane_current_path}"
 bind _ split-window -h -c "#{pane_current_path}"
+
+# ----------------------------------- pane ----------------------------------- #
 
 # pane navigation
 set -g mouse on
@@ -24,6 +40,7 @@ bind -n M-Down select-pane -D
 
 # ---------------------------------------------------------------------------- #
 #                           TPM: tmux plugin manager                           #
+
 set -g @plugin 'tmux-plugins/tpm'
 set -g @plugin 'jimeh/tmux-themepack' # might be better than https://github.com/gpakosz/.tmux
 set -g @plugin 'tmux-plugins/tmux-resurrect'
@@ -38,8 +55,8 @@ if "test ! -d ~/.tmux/plugins/tpm" \
 
 # Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
 run '~/.tmux/plugins/tpm/tpm'
-# ---------------------------------------------------------------------------- #
 
+# ---------------------------------------------------------------------------- #
 
 # remove left status bar
 set-option -g status-left ""
