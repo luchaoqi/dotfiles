@@ -74,9 +74,10 @@ zstyle ':omz:update' mode auto      # update automatically without asking
 plugins=(
     # poetry # https://python-poetry.org/docs/#enable-tab-completion-for-bash-fish-or-zsh
     git
-    sudo
-    copypath
-    dirhistory
+    z
+    # sudo
+    # copypath # no need when using windows terminal with mouse support
+    # dirhistory # shortcuts overwritten by tmux
     zsh-completions
     zsh-autosuggestions
     zsh-syntax-highlighting # zsh-syntax-highlighting should come before zsh-history-substring-search
@@ -84,17 +85,12 @@ plugins=(
     # wakatime # https://wakatime.com/terminal
     )
 
-# automatically starts tmux if it is installed
-# note that any oh-my-zsh config needs to be loaded before sourcing $ZSH/oh-my-zsh.sh
-# https://stackoverflow.com/a/15882090/11964524
-# there is a bug in zsh after adding tmux (regardless of the order) to plugins
-# so I commented out the following line
-# if [ -x "$(command -v tmux)" ]; then
-#     ZSH_TMUX_AUTOSTART=true
-# fi
-
 
 source $ZSH/oh-my-zsh.sh
+
+# ------------------------------- for z plugin ------------------------------- #
+autoload -U compinit && compinit
+zstyle ':completion:*' menu select
 
 # User configuration
 
