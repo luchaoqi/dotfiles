@@ -1,7 +1,7 @@
 alias ta='tmux a -d'
 alias deconda='conda deactivate'
 alias untar='tar -xvf'
-alias du='du -sh -- *'
+alias du='du -sh'
 alias df='df -h'
 alias mv='mv -i'
 alias rm='rm -I'
