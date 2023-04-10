@@ -12,6 +12,8 @@ Configure `bash_profile` for `bash` and `zsh_profile` for `zsh`.
 
 # To do
 
+change zsh/omz installation to sudo mode
+
 [amix/vimrc: The ultimate Vim configuration (vimrc)](https://github.com/amix/vimrc)
 
 add wakatime and thefuck into zsh/bootstrap
