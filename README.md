@@ -28,6 +28,8 @@ find shellcheck hook for pre-commit
 
 [SFTP Drive | Map Remote Servers as Local Drives via SFTP | nsoftware](https://www.nsoftware.com/sftp/drive/)
 
+[Termius - SSH platform for Mobile and Desktop](https://termius.com/)
+
 [kangyu-california/PersistentWindows: fork of http://www.ninjacrab.com/persistent-windows/ with windows 10 update](https://github.com/kangyu-california/PersistentWindows)
 
 # Resources
