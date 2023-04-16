@@ -12,7 +12,7 @@ Configure `bash_profile` for `bash` and `zsh_profile` for `zsh`.
 
 # To do
 
-change zsh/omz installation to sudo mode
+change zsh/omz installation to sudo mode OR [Install ZSH locally on a system without root permissions](https://gist.github.com/SirDavidLudwig/ede9adaa512f4295130f67aeef508e48)
 
 add [tamcore/autoupdate-oh-my-zsh-plugins: Plugin for oh-my-zsh to automatically update custom-plugins](https://github.com/TamCore/autoupdate-oh-my-zsh-plugins)
 
