@@ -14,6 +14,8 @@ Configure `bash_profile` for `bash` and `zsh_profile` for `zsh`.
 
 change zsh/omz installation to sudo mode
 
+add [tamcore/autoupdate-oh-my-zsh-plugins: Plugin for oh-my-zsh to automatically update custom-plugins](https://github.com/TamCore/autoupdate-oh-my-zsh-plugins)
+
 [amix/vimrc: The ultimate Vim configuration (vimrc)](https://github.com/amix/vimrc)
 
 add wakatime and thefuck into zsh/bootstrap
