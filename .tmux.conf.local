@@ -9,9 +9,9 @@
 # ---------------------------------- window ---------------------------------- #
 
 # create new window with C-t like tabs
-bind -n C-t new-window
+bind C-t new-window
 # close window with C-w
-bind -n C-w confirm-before -p "kill-window #W? (y/n)" kill-window # this is from tmux list-keys
+bind C-w confirm-before -p "kill-window #W? (y/n)" kill-window # this is from tmux list-keys
 
 # move window left/right with Ctrl-Shift-Left/Right
 bind-key -n C-S-Left swap-window -d -t -1
