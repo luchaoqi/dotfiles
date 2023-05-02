@@ -1,10 +1,13 @@
-# tree view, note that t is binded to view TIME
-# default is w - no need to use v
-# unbind v
-# bind v choose-tree
-
 # check all current bindings with:
 # tmux list-keys (shortcut: C-a ? and then search with C-s)
+
+# "bind" is an alias for "bind-key", they have the same effect.
+# "-n" for no prefix required
+
+# ---------------------------------- others ---------------------------------- #
+
+# synchronize all panes in a window
+bind-key a set-window-option synchronize-panes\; display-message "synchronize-panes is now #{?pane_synchronized,on,off}"
 
 # ---------------------------------- window ---------------------------------- #
 
