@@ -61,5 +61,7 @@ run '~/.tmux/plugins/tpm/tpm'
 
 # ---------------------------------------------------------------------------- #
 
+# status bar center (default is left)
+set-option -g status-justify "centre"
 # remove left status bar
 set-option -g status-left ""
