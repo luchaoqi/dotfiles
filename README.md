@@ -12,6 +12,12 @@ Configure `bash_profile` for `bash` and `zsh_profile` for `zsh`.
 
 # To do
 
+find an elegant way to solve the problems:
+> [tmux is causing anaconda to use a different python source - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/366553/tmux-is-causing-anaconda-to-use-a-different-python-source)  
+> [tmux is causing anaconda to use a different python source - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/366553/tmux-is-causing-anaconda-to-use-a-different-python-source/673196#673196superuser.com/a/1330842/72533)  
+> For now, I need to add the line `deconda` **before** `conda activate {env_name}`
+
+
 change zsh/omz installation to sudo mode OR [Install ZSH locally on a system without root permissions](https://gist.github.com/SirDavidLudwig/ede9adaa512f4295130f67aeef508e48)
 
 add [tamcore/autoupdate-oh-my-zsh-plugins: Plugin for oh-my-zsh to automatically update custom-plugins](https://github.com/TamCore/autoupdate-oh-my-zsh-plugins)
