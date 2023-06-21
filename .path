@@ -12,6 +12,7 @@
 
 # ------------------------------- env variables ------------------------------ #
 
+export CONDA_AUTO_ACTIVATE_BASE=false
 # export TORCH_HOME=/playpen-nas-ssd/luchao/software/.cache/torch
 # export PIP_CACHE_DIR=/playpen-nas-ssd/luchao/software/.cache/pip
 # export TORCH_EXTENSIONS_DIR=/playpen-nas-ssd/luchao/software/.cache/torch_extensions
