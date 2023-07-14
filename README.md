@@ -14,7 +14,6 @@ Configure `bash_profile` for `bash` and `zsh_profile` for `zsh`.
 
 find an elegant way to solve the problems:
 > [tmux is causing anaconda to use a different python source - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/366553/tmux-is-causing-anaconda-to-use-a-different-python-source)  
-> [tmux is causing anaconda to use a different python source - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/366553/tmux-is-causing-anaconda-to-use-a-different-python-source/673196#673196superuser.com/a/1330842/72533)  
 > For now, I need to add the line `deconda` **before** `conda activate {env_name}`
 
 
