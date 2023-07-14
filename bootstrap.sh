@@ -11,10 +11,10 @@
 # ---------------------------------------------------------------------------- #
 
 # move old dotfiles to backup directory
+# .zshrc .zsh_profile will be moved later in omz section
 mkdir -p ~/dotfiles_backup
 files=".aliases .path\
  .bashrc .bash_profile\
- .zshrc .zsh_profile\
  .gitconfig .gitmessage .gitignore_global\
  .vimrc basic.vim\
  .condarc\
