@@ -105,8 +105,6 @@ else
         # The following git way doesn't work smoothly with tmux
         # git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
         sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
-        cp ~/dotfiles/.zshrc ~
-        cp ~/dotfiles/.zsh_profile ~
     else
         echo "cannot install omz, please install manually"
     fi
@@ -123,6 +121,8 @@ if [ -x "$(command -v zsh)" ]; then
     done
 fi
 
+cp ~/dotfiles/.zshrc ~
+cp ~/dotfiles/.zsh_profile ~
 # source ~/.zshrc
 
 
