@@ -1,6 +1,6 @@
 # # this file is sourced in bashe_profile
 # # used to set customized PATH
-# software_path="/mnt/local-raid10/workspace/lqi/software"
+# software_path="/playpen-nas-ssd/luchao/software"
 # # include executables
 # export PATH="$PATH:$software_path"
 # # also include bin recursively
