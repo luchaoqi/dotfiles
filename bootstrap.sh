@@ -132,6 +132,8 @@ if ! [ -x "$(command -v pre-commit)" ]; then
     echo "pre-commit is not installed, installing pre-commit"
     if [ -x "$(command -v pip)" ]; then
         pip install pre-commit --user --no-cache-dir || echo "pip install pre-commit failed"
+        # ensure pre-commit is in PATH
+        omz reload
     fi
 fi
 
