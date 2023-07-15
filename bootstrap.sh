@@ -62,9 +62,10 @@ fi
 if ! [ -x "$(command -v pip)" ]; then
     echo "pip is not installed, installing pip"
     if [ -x "$(command -v wget)" ] || [ -x "$(command -v curl)" ] && [ -x "$(command -v python)" ]; then
-        curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py || wget https://bootstrap.pypa.io/get-pip.py
-        python get-pip.py
-        rm get-pip.py
+        # curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py || wget https://bootstrap.pypa.io/get-pip.py
+        # python get-pip.py
+        # rm get-pip.py
+        wget -qO- https://bootstrap.pypa.io/get-pip.py | python -
     else
         echo "cannot install pip, please install pip manually"
     fi
