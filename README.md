@@ -25,7 +25,8 @@ add [tamcore/autoupdate-oh-my-zsh-plugins: Plugin for oh-my-zsh to automatically
 
 add wakatime and thefuck into zsh/bootstrap
 
-[ohmyzsh/plugins/thefuck at master · ohmyzsh/ohmyzsh](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/thefuck)
+[conda-incubator/conda-zsh-completion: zsh completion for conda](https://github.com/conda-incubator/conda-zsh-completion)
+ | [ohmyzsh/plugins/thefuck at master · ohmyzsh/ohmyzsh](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/thefuck)
 
 find shellcheck hook for pre-commit
 
