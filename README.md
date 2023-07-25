@@ -19,14 +19,16 @@ find an elegant way to solve the problems:
 
 change zsh/omz installation to sudo mode OR [Install ZSH locally on a system without root permissions](https://gist.github.com/SirDavidLudwig/ede9adaa512f4295130f67aeef508e48)
 
-add [tamcore/autoupdate-oh-my-zsh-plugins: Plugin for oh-my-zsh to automatically update custom-plugins](https://github.com/TamCore/autoupdate-oh-my-zsh-plugins)
 
 [amix/vimrc: The ultimate Vim configuration (vimrc)](https://github.com/amix/vimrc)
 
+install extra omz plugins in `bootstrap`: https://github.com/luchaoqi/dotfiles/blob/51444a49bda9fd2499fa85019b48145aba06b6f3/bootstrap.sh#L122  
 add wakatime and thefuck into zsh/bootstrap
 
 [conda-incubator/conda-zsh-completion: zsh completion for conda](https://github.com/conda-incubator/conda-zsh-completion)
  | [ohmyzsh/plugins/thefuck at master · ohmyzsh/ohmyzsh](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/thefuck)
+ 
+add [tamcore/autoupdate-oh-my-zsh-plugins: Plugin for oh-my-zsh to automatically update custom-plugins](https://github.com/TamCore/autoupdate-oh-my-zsh-plugins)
 
 find shellcheck hook for pre-commit
 
