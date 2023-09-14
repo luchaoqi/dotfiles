@@ -42,6 +42,8 @@ find shellcheck hook for pre-commit
 
 [kangyu-california/PersistentWindows: fork of http://www.ninjacrab.com/persistent-windows/ with windows 10 update](https://github.com/kangyu-california/PersistentWindows)
 
+[ToDesk远程桌面软件-免费安全流畅的远程连接电脑手机](https://www.todesk.com/)
+
 # Resources
 
 [conanhujinming/dotfiles: My dotfiles .files (github.com)](https://github.com/conanhujinming/dotfiles)
