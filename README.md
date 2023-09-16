@@ -42,6 +42,8 @@ find shellcheck hook for pre-commit
 
 [kangyu-california/PersistentWindows: fork of http://www.ninjacrab.com/persistent-windows/ with windows 10 update](https://github.com/kangyu-california/PersistentWindows)
 
+[WereDev/Wu10Man: Enable/Disable Windows 10 Automatic Updates](https://github.com/WereDev/Wu10Man)
+
 # Resources
 
 [conanhujinming/dotfiles: My dotfiles .files (github.com)](https://github.com/conanhujinming/dotfiles)
