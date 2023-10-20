@@ -120,6 +120,10 @@ if [ -x "$(command -v zsh)" ]; then
             git clone "https://github.com/zsh-users/$plugin" "$ZSH_CUSTOM/plugins/$plugin"
         fi
     done
+    # Other custom useful omz plugins
+    git clone https://github.com/jirutka/zsh-shift-select.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-shift-select
+    git clone https://github.com/esc/conda-zsh-completion ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/conda-zsh-completion
+    git clone https://github.com/wbingli/zsh-wakatime.git ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/wakatime
 fi
 
 cp ~/dotfiles/.zshrc ~
