@@ -17,8 +17,8 @@ bind -n C-t new-window
 bind -n C-w confirm-before -p "kill-window #W? (y/n)" kill-window # this is from tmux list-keys
 
 # move window left/right with Ctrl-Shift-Left/Right
-bind-key -n C-S-Left swap-window -d -t -1
-bind-key -n C-S-Right swap-window -d -t +1
+bind-key -r C-S-Left swap-window -d -t -1
+bind-key -r C-S-Right swap-window -d -t +1
 
 # split current window with current path
 bind - split-window -v -c "#{pane_current_path}"
