@@ -125,6 +125,8 @@ if [ -x "$(command -v zsh)" ]; then
     git clone https://github.com/jirutka/zsh-shift-select.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-shift-select
     git clone https://github.com/esc/conda-zsh-completion ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/conda-zsh-completion
     git clone https://github.com/wbingli/zsh-wakatime.git ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/wakatime
+
+    git clone https://github.com/TamCore/autoupdate-oh-my-zsh-plugins ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/autoupdate
 fi
 
 cp ~/dotfiles/.zshrc ~
