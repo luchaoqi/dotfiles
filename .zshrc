@@ -75,9 +75,6 @@ plugins=(
     # poetry # https://python-poetry.org/docs/#enable-tab-completion-for-bash-fish-or-zsh
     git
     z
-    # sudo
-    # copypath # no need when using windows terminal with mouse support
-    # dirhistory # shortcuts overwritten by tmux
     zsh-completions
     zsh-autosuggestions
     zsh-syntax-highlighting # zsh-syntax-highlighting should come before zsh-history-substring-search
@@ -85,6 +82,8 @@ plugins=(
     wakatime # https://wakatime.com/terminal
     conda-zsh-completion
     zsh-shift-select
+
+    autoupdate
     )
 
 
