@@ -67,6 +67,7 @@ bind -n M-l select-pane -R
 
 set -g @plugin 'tmux-plugins/tpm'
 set -g @plugin 'jimeh/tmux-themepack' # might be better than https://github.com/gpakosz/.tmux
+# sometimes removing the saved sessions is needed
 # rm -rf ~/.local/share/tmux/resurrect/
 set -g @plugin 'tmux-plugins/tmux-resurrect'
 set -g @plugin 'tmux-plugins/tmux-continuum'
@@ -85,5 +86,6 @@ run '~/.tmux/plugins/tpm/tpm'
 
 # status bar center (default is left)
 set-option -g status-justify "centre"
-# remove left status bar
-set-option -g status-left ""
+tmux_conf_theme_status_left=" ❐ #S | ↑#{?uptime_y, #{uptime_y}y,}#{?uptime_d, #{uptime_d}d,}#{?uptime_h, #{uptime_h}h,}#{?uptime_m, #{uptime_m}m,} "
+tmux_conf_theme_status_right=" #{prefix}#{mouse}#{pairing}#{synchronized}, %R , %d %b | #{username}#{root} | #{hostname} "
+
