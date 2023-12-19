@@ -80,7 +80,7 @@ plugins=(
     zsh-syntax-highlighting # zsh-syntax-highlighting should come before zsh-history-substring-search
     zsh-history-substring-search
 
-    zsh-wakatime # https://wakatime.com/terminal
+    wakatime # https://wakatime.com/terminal
     conda-zsh-completion
     zsh-shift-select
 
