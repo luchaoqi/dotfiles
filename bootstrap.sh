@@ -124,7 +124,8 @@ if [ -x "$(command -v zsh)" ]; then
     git clone https://github.com/agkozak/zsh-z ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-z
     git clone https://github.com/jirutka/zsh-shift-select.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-shift-select
     git clone https://github.com/esc/conda-zsh-completion ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/conda-zsh-completion
-    git clone https://github.com/wbingli/zsh-wakatime.git ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-wakatime
+    python3 -c "$(wget -q -O - https://raw.githubusercontent.com/wakatime/vim-wakatime/master/scripts/install_cli.py)"
+    git clone https://github.com/sobolevn/wakatime-zsh-plugin.git ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/wakatime
 
     git clone https://github.com/TamCore/autoupdate-oh-my-zsh-plugins ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/autoupdate
 fi
