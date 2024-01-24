@@ -16,9 +16,7 @@ find an elegant way to solve the problems:
 > [tmux is causing anaconda to use a different python source - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/366553/tmux-is-causing-anaconda-to-use-a-different-python-source)  
 > For now, I need to add the line `deconda` **before** `conda activate {env_name}`
 
-
 change zsh/omz installation to sudo mode OR [Install ZSH locally on a system without root permissions](https://gist.github.com/SirDavidLudwig/ede9adaa512f4295130f67aeef508e48)
-
 
 [amix/vimrc: The ultimate Vim configuration (vimrc)](https://github.com/amix/vimrc)
 
@@ -37,6 +35,8 @@ find shellcheck hook for pre-commit
 [WereDev/Wu10Man: Enable/Disable Windows 10 Automatic Updates](https://github.com/WereDev/Wu10Man)
 
 # Resources
+
+switching between different system-level CUDA versions in conda: [Managing Multiple CUDA Versions on a Single Machine: A Comprehensive Guide | by Chayma Zatout | Towards Data Science](https://towardsdatascience.com/managing-multiple-cuda-versions-on-a-single-machine-a-comprehensive-guide-97db1b22acdc#b45b)
 
 [conanhujinming/dotfiles: My dotfiles .files (github.com)](https://github.com/conanhujinming/dotfiles)
 
