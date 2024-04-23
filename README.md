@@ -22,6 +22,9 @@ change zsh/omz installation to sudo mode OR [Install ZSH locally on a system wit
 
 find shellcheck hook for pre-commit
 
+Add the following to `zsh_profile` to update tmux plugins everytime login:    
+`~/.tmux/plugins/tpm/bin/update_plugins all`, refer: [tpm/docs/managing_plugins_via_cmd_line.md at master · tmux-plugins/tpm](https://github.com/tmux-plugins/tpm/blob/master/docs/managing_plugins_via_cmd_line.md)
+
 # Software
 
 [VNC from Windows to Linux – Computer Action Team](https://cat.pdx.edu/platforms/windows/remote-access/vnc-to-linux/) + MobaXterm
