@@ -24,7 +24,7 @@ find shellcheck hook for pre-commit
 
 # Software
 
-[TigerVNC](https://tigervnc.org/)
+[VNC from Windows to Linux – Computer Action Team](https://cat.pdx.edu/platforms/windows/remote-access/vnc-to-linux/) + MobaXterm
 
 [SFTP Drive | Map Remote Servers as Local Drives via SFTP | nsoftware](https://www.nsoftware.com/sftp/drive/)
 
