@@ -25,6 +25,9 @@ find shellcheck hook for pre-commit
 Add the following to `zsh_profile` to update tmux plugins everytime login:    
 `~/.tmux/plugins/tpm/bin/update_plugins all`, refer: [tpm/docs/managing_plugins_via_cmd_line.md at master · tmux-plugins/tpm](https://github.com/tmux-plugins/tpm/blob/master/docs/managing_plugins_via_cmd_line.md)
 
+Jobs in tmux are killed without any errors after ssh timeout:  
+[sshd - tmux session killed when disconnecting from ssh - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/171503/tmux-session-killed-when-disconnecting-from-ssh)
+
 # Software
 
 [VNC from Windows to Linux – Computer Action Team](https://cat.pdx.edu/platforms/windows/remote-access/vnc-to-linux/) + MobaXterm
