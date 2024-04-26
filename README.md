@@ -27,6 +27,7 @@ Add the following to `zsh_profile` to update tmux plugins everytime login:
 
 Jobs in tmux are killed without any errors after ssh timeout:  
 [sshd - tmux session killed when disconnecting from ssh - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/171503/tmux-session-killed-when-disconnecting-from-ssh)
+> doubt it might be caused by tpm plugins
 
 # Software
 
