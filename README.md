@@ -32,6 +32,7 @@ Jobs in tmux are killed without any errors after ssh timeout:
 # Software
 
 [ActivityWatch/activitywatch: The best free and open-source automated time tracker. Cross-platform, extensible, privacy-focused.](https://github.com/ActivityWatch/activitywatch)
+> Missing syncing feature
 
 [VNC from Windows to Linux – Computer Action Team](https://cat.pdx.edu/platforms/windows/remote-access/vnc-to-linux/) + MobaXterm
 
