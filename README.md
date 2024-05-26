@@ -32,7 +32,7 @@ doubt it might be caused by tpm plugins:
 
 [Restore not starting processes · Issue #129 · tmux-plugins/tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect/issues/129)
 
-[Plugins don't work · Issue #56 · tmux-plugins/tmux-continuum](https://github.com/tmux-plugins/tmux-continuum/issues/56)
+[Plugins don't work · Issue #56 · tmux-plugins/tmux-continuum](https://github.com/tmux-plugins/tmux-continuum/issues/56#issuecomment-653351722)
 
 [tmux-plugins/tmux-continuum: Continuous saving of tmux environment. Automatic restore when tmux is started. Automatic tmux start when computer is turned on.](https://github.com/tmux-plugins/tmux-continuum?tab=readme-ov-file#known-issues)
 
