@@ -51,6 +51,8 @@ doubt it might be caused by tpm plugins:
 
 [WereDev/Wu10Man: Enable/Disable Windows 10 Automatic Updates](https://github.com/WereDev/Wu10Man)
 
+[Snipaste](https://www.snipaste.com/) OR [PixPin](https://pixpinapp.com/)
+
 # Resources
 
 switching between different system-level CUDA versions in conda: [Managing Multiple CUDA Versions on a Single Machine: A Comprehensive Guide | by Chayma Zatout | Towards Data Science](https://towardsdatascience.com/managing-multiple-cuda-versions-on-a-single-machine-a-comprehensive-guide-97db1b22acdc#b45b)
