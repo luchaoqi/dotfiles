@@ -15,9 +15,9 @@
 export CONDA_AUTO_ACTIVATE_BASE=false
 # export PIP_CACHE_DIR=/playpen-nas-ssd/luchao/software/.cache/pip
 # export DNNLIB_CACHE_DIR=/playpen-nas-ssd/luchao/software/.cache/dnnlib
-
 # export TORCH_HOME=/playpen-nas-ssd/luchao/software/.cache/torch
 # export TORCH_EXTENSIONS_DIR=/playpen-nas-ssd/luchao/software/.cache/torch_extensions
+
 # export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-11.0/targets/x86_64-linux/lib
  
 # ---------------------------------------------------------------------------- #
