@@ -1,13 +1,11 @@
+# https://unix.stackexchange.com/questions/167582/why-zsh-ends-a-line-with-a-highlighted-percent-symbol
+PROMPT_EOL_MARK=''
+
 if [ -f ~/.aliases ]; then
     . ~/.aliases
 fi
 
-# https://unix.stackexchange.com/questions/167582/why-zsh-ends-a-line-with-a-highlighted-percent-symbol
-PROMPT_EOL_MARK=''
-
-# ------------- no need to source path if sourced in bash_profile ------------ #
-#               but here we remove duplicated entries at the end               #
-# ---------------------------------------------------------------------------- #
+# remove duplicated entries, technically not needed if sourced in bash_profile
 if [ -f ~/.path ]; then
     . ~/.path
 fi
@@ -15,11 +13,23 @@ fi
 typeset -aU path
 
 
+# ---------------------------------------------------------------------------- #
+#                                 plugin config                                #
+# ---------------------------------------------------------------------------- #
 
-# ---------------------------------------------------------------------------- #
-#                                  omz plugin                                  #
-# ---------------------------------------------------------------------------- #
-ZSHZ_CASE=ignore
+# zsh-z
+autoload -U compinit && compinit
+zstyle ':completion:*' menu select
+ZSHZ_CASE=smart
+
+# zsh-history-substring-search
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+
+# autoupdate
+ZSH_CUSTOM_AUTOUPDATE_QUIET=true
+ZSH_CUSTOM_AUTOUPDATE_NUM_WORKERS=8
+
 
 # ---------------------------------------------------------------------------- #
 #                                     tmux                                     #

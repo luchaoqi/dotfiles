@@ -90,9 +90,6 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-# ------------------------------- for z plugin ------------------------------- #
-autoload -U compinit && compinit
-zstyle ':completion:*' menu select
 
 # User configuration
 
