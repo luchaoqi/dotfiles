@@ -88,8 +88,24 @@ plugins=(
     )
 
 
-source $ZSH/oh-my-zsh.sh
+# ---------------------------------------------------------------------------- #
+#                                 plugin config                                #
+# ---------------------------------------------------------------------------- #
 
+# zsh-z
+autoload -U compinit && compinit
+zstyle ':completion:*' menu select
+ZSHZ_CASE=smart
+
+# zsh-history-substring-search
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+
+# autoupdate
+ZSH_CUSTOM_AUTOUPDATE_QUIET=true
+ZSH_CUSTOM_AUTOUPDATE_NUM_WORKERS=8
+
+source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
