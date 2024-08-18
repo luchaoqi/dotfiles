@@ -1,12 +1,11 @@
 #!/bin/sh
 
-# Start up the standard system desktop
-# unset SESSION_MANAGER
-# unset DBUS_SESSION_BUS_ADDRESS
-# /usr/bin/startxfce4
-# [ -x /etc/vnc/xstartup ] && exec /etc/vnc/xstartup
-# [ -r $HOME/.Xresources ] && xrdb $HOME/.Xresources
-# x-window-manager &
+# xrdb $HOME/.Xresources
+# startxfce4 &
 
-xrdb $HOME/.Xresources
-startxfce4 &
+unset SESSION_MANAGER
+unset DBUS_SESSION_BUS_ADDRESS
+/usr/bin/startxfce4
+[ -x /etc/vnc/xstartup ] && exec /etc/vnc/xstartup
+[ -r $HOME/.Xresources ] && xrdb $HOME/.Xresources
+x-window-manager &
