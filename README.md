@@ -38,14 +38,11 @@ doubt it might be caused by tpm plugins:
 
 # Software
 
-[ActivityWatch/activitywatch: The best free and open-source automated time tracker. Cross-platform, extensible, privacy-focused.](https://github.com/ActivityWatch/activitywatch)
-> Missing syncing feature
-
 [VNC from Windows to Linux – Computer Action Team](https://cat.pdx.edu/platforms/windows/remote-access/vnc-to-linux/) + MobaXterm
 
-[SFTP Drive | Map Remote Servers as Local Drives via SFTP | nsoftware](https://www.nsoftware.com/sftp/drive/)
-
 [Termius - SSH platform for Mobile and Desktop](https://termius.com/)
+> ssh sync + sftp all in one
+> free for github student pkg
 
 [kangyu-california/PersistentWindows: fork of http://www.ninjacrab.com/persistent-windows/ with windows 10 update](https://github.com/kangyu-california/PersistentWindows)
 
