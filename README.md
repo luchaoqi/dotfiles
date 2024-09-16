@@ -41,7 +41,7 @@ doubt it might be caused by tpm plugins:
 [VNC from Windows to Linux – Computer Action Team](https://cat.pdx.edu/platforms/windows/remote-access/vnc-to-linux/) + MobaXterm
 
 [Termius - SSH platform for Mobile and Desktop](https://termius.com/)
-> ssh sync + sftp all in one
+> ssh sync + sftp all in one  
 > free for github student pkg
 
 [kangyu-california/PersistentWindows: fork of http://www.ninjacrab.com/persistent-windows/ with windows 10 update](https://github.com/kangyu-california/PersistentWindows)
