@@ -42,7 +42,7 @@ doubt it might be caused by tpm plugins:
 
 [Termius - SSH platform for Mobile and Desktop](https://termius.com/)
 > ssh sync + sftp all in one  
-> free for github student pkg
+> `select to copy` function does not work well compared to Terminal IMO
 
 [kangyu-california/PersistentWindows: fork of http://www.ninjacrab.com/persistent-windows/ with windows 10 update](https://github.com/kangyu-california/PersistentWindows)
 
