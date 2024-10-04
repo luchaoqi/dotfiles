@@ -26,14 +26,6 @@ for file in $files; do
         mv $HOME/$file $HOME/dotfiles_backup/
     else
         echo "Copying $file to home directory"
-        cp $file ~/$file
-    fi
-done
-
-# copy new dotfiles to home directory
-for file in $files; do
-    if [ -f $HOME/dotfiles/$file ]; then
-        echo "Copying $file"
         cp $HOME/dotfiles/$file ~/$file
     fi
 done
