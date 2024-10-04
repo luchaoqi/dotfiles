@@ -13,20 +13,18 @@
 # move old dotfiles to backup directory
 # .zshrc .zsh_profile will be moved later in omz section
 mkdir -p ~/dotfiles_backup
-files=".aliases .path\
- .bashrc .bash_profile\
- .gitconfig .gitmessage .gitignore_global\
- .vimrc basic.vim\
- .condarc\
- .tmux.conf .tmux.conf.local"
+files=".aliases .path .bashrc .bash_profile .gitconfig .gitmessage .gitignore_global .vimrc basic.vim .condarc .tmux.conf .tmux.conf.local"
+
 for file in $files; do
-    # if exists, move to dotfiles_backup; else copy to home directory
-    if [ -f $HOME/$file ]; then
-        echo "Moving $file to ~/dotfiles_backup"
-        mv $HOME/$file $HOME/dotfiles_backup/
-    else
+    if [ -f "$HOME/dotfiles/$file" ]; then
+        if [ -f "$HOME/$file" ]; then
+            echo "Moving $file to ~/dotfiles_backup"
+            mv "$HOME/$file" "$HOME/dotfiles_backup/"
+        fi
         echo "Copying $file to home directory"
-        cp $HOME/dotfiles/$file ~/$file
+        cp "$HOME/dotfiles/$file" "$HOME/$file"
+    else
+        echo "File $file not found in $HOME/dotfiles, skipping..."
     fi
 done
 
