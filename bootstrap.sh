@@ -20,9 +20,18 @@ files=".aliases .path\
  .condarc\
  .tmux.conf .tmux.conf.local"
 for file in $files; do
-    if [ -f $HOME/$file ] && [ ! -f $HOME/dotfiles_backup/$file ]; then
+    # if [ -f $HOME/$file ] && [ ! -f $HOME/dotfiles_backup/$file ]; then
+    #     echo "Moving $file to ~/dotfiles_backup"
+    #     mv $HOME/$file $HOME/dotfiles_backup/
+    # fi
+
+    # if exists, move to dotfiles_backup; else copy to home directory
+    if [ -f $HOME/$file ]; then
         echo "Moving $file to ~/dotfiles_backup"
         mv $HOME/$file $HOME/dotfiles_backup/
+    else
+        echo "Copying $file to home directory"
+        cp $HOME/dotfiles/$file ~/$file
     fi
 done
 
