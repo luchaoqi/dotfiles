@@ -50,6 +50,8 @@ doubt it might be caused by tpm plugins:
 
 [Snipaste](https://www.snipaste.com/) OR [PixPin](https://pixpinapp.com/)
 
+elevenclock
+
 # Resources
 
 switching between different system-level CUDA versions in conda: [Managing Multiple CUDA Versions on a Single Machine: A Comprehensive Guide | by Chayma Zatout | Towards Data Science](https://towardsdatascience.com/managing-multiple-cuda-versions-on-a-single-machine-a-comprehensive-guide-97db1b22acdc#b45b)
