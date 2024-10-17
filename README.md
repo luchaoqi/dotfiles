@@ -50,7 +50,7 @@ doubt it might be caused by tpm plugins:
 
 [Snipaste](https://www.snipaste.com/) OR [PixPin](https://pixpinapp.com/)
 
-elevenclock
+[clock](https://www.52pojie.cn/thread-1952531-1-1.html)
 
 # Resources
 
