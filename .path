@@ -13,6 +13,7 @@
 # ------------------------------- env variables ------------------------------ #
 
 export CONDA_AUTO_ACTIVATE_BASE=false
+# export GIT_TMP_DIR=/playpen-nas-ssd/luchao/software/.cache/git_tmp
 # export TMPDIR=/playpen-nas-ssd/luchao/software/.cache/pip_tmp
 # export PIP_CACHE_DIR=/playpen-nas-ssd/luchao/software/.cache/pip
 # export DNNLIB_CACHE_DIR=/playpen-nas-ssd/luchao/software/.cache/dnnlib
