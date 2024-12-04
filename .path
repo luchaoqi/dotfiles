@@ -26,6 +26,7 @@ export CONDA_AUTO_ACTIVATE_BASE=false
 # export HUGGINFACE_HUB_CACHE="$cache_path/huggingface/hub"
 # export WANDB_CACHE_DIR="$cache_path/wandb"
 
+# move this to conda-specific env e.g. conda env config vars set LD_LIBRARY_PATH=/usr/xxx
 # export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-11.0/targets/x86_64-linux/lib
 
 # ---------------------------------------------------------------------------- #
