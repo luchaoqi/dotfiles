@@ -13,18 +13,21 @@
 # ------------------------------- env variables ------------------------------ #
 
 export CONDA_AUTO_ACTIVATE_BASE=false
-# export GIT_TMP_DIR=/playpen-nas-ssd/luchao/software/.cache/git_tmp
-# export TMPDIR=/playpen-nas-ssd/luchao/software/.cache/pip_tmp
-# export PIP_CACHE_DIR=/playpen-nas-ssd/luchao/software/.cache/pip
-# export DNNLIB_CACHE_DIR=/playpen-nas-ssd/luchao/software/.cache/dnnlib
-# export TORCH_HOME=/playpen-nas-ssd/luchao/software/.cache/torch
-# export TORCH_EXTENSIONS_DIR=/playpen-nas-ssd/luchao/software/.cache/torch_extensions
-# export HF_HOME=/playpen-nas-ssd/luchao/software/.cache/huggingface
-# export HUGGINFACE_HUB_CACHE=/playpen-nas-ssd/luchao/software/.cache/huggingface/hub
-# export WANDB_CACHE_DIR=/playpen-nas-ssd/luchao/software/.cache/wandb
+# # Define cache base path
+# cache_path="/playpen-nas-ssd/luchao/software/.cache"
+# # Export cache directory variables
+# export GIT_TMP_DIR="$cache_path/git_tmp"
+# export TMPDIR="$cache_path/pip_tmp"
+# export PIP_CACHE_DIR="$cache_path/pip"
+# export DNNLIB_CACHE_DIR="$cache_path/dnnlib"
+# export TORCH_HOME="$cache_path/torch"
+# export TORCH_EXTENSIONS_DIR="$cache_path/torch_extensions"
+# export HF_HOME="$cache_path/huggingface"
+# export HUGGINFACE_HUB_CACHE="$cache_path/huggingface/hub"
+# export WANDB_CACHE_DIR="$cache_path/wandb"
 
 # export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-11.0/targets/x86_64-linux/lib
- 
+
 # ---------------------------------------------------------------------------- #
 
 # set PATH so it includes user's private bin if it exists
