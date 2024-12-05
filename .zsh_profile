@@ -20,6 +20,7 @@ typeset -aU path
 # automatically attach if exists
 if [ -x "$(command -v tmux)" ] && [ "$TMUX" = "" ] && [ "$TERM_PROGRAM" != "vscode" ]; then
     tmux attach -d
+    # https://unix.stackexchange.com/a/570015/482117
     tmux resize-window -A
 fi
 
