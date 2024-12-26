@@ -11,6 +11,8 @@ Table of Contents
 Configure `bash_profile` for `bash` and `zsh_profile` for `zsh`.
 
 # To do
+Update:
+- most of the problems below are caused by tmux, thus I'm considering [wezterm]([url](https://github.com/wez/wezterm)) atm.
 
 find an elegant way to solve the problems:
 > [tmux is causing anaconda to use a different python source - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/366553/tmux-is-causing-anaconda-to-use-a-different-python-source)  
