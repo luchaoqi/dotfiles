@@ -1,0 +1,39 @@
+# sync basic config for vim / tmux / etc.
+name: Sync Configurations
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Runs daily at midnight
+  workflow_dispatch: # Allows manual triggering
+  push:
+    branches:
+      - main
+
+jobs:
+  sync-configs:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout your repository
+      - name: Checkout Your Repository
+        uses: actions/checkout@v3
+
+      # Step 2: vimrc config
+      - name: config vim
+        run: |
+          curl -sL https://raw.githubusercontent.com/amix/vimrc/refs/heads/master/vimrcs/basic.vim -o basic.vim
+
+      # Step 3: tmux config
+      - name: config tmux
+        run: |
+          # download global config only
+          curl -sL https://raw.githubusercontent.com/gpakosz/.tmux/refs/heads/master/.tmux.conf -o .tmux.conf
+
+      # Step 4: Commit and push changes
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add basic.vim .tmux.conf
+          git commit -m "Update global configs e.g. vimrc and tmux"
+          git push
