@@ -35,5 +35,5 @@ jobs:
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
           git add basic.vim .tmux.conf
-          git commit -m "Update global configs e.g. vimrc and tmux"
+          git commit -m "Update official global configs (e.g. vimrc and tmux)"
           git push
