@@ -20,8 +20,6 @@ find an elegant way to solve the problems:
 
 change zsh/omz installation to sudo mode OR [Install ZSH locally on a system without root permissions](https://gist.github.com/SirDavidLudwig/ede9adaa512f4295130f67aeef508e48)
 
-[amix/vimrc: The ultimate Vim configuration (vimrc)](https://github.com/amix/vimrc)
-
 find shellcheck hook for pre-commit
 
 Add the following to `zsh_profile` to update tmux plugins everytime login:    
@@ -42,17 +40,13 @@ doubt it might be caused by tpm plugins:
 
 [VNC from Windows to Linux – Computer Action Team](https://cat.pdx.edu/platforms/windows/remote-access/vnc-to-linux/) + MobaXterm
 
-[Termius - SSH platform for Mobile and Desktop](https://termius.com/)
-> ssh sync + sftp all in one  
-> `select to copy` function does not work well compared to Terminal IMO
-
-[kangyu-california/PersistentWindows: fork of http://www.ninjacrab.com/persistent-windows/ with windows 10 update](https://github.com/kangyu-california/PersistentWindows)
-
 [ChrisTitusTech/winutil: Chris Titus Tech's Windows Utility - Install Programs, Tweaks, Fixes, and Updates](https://github.com/ChrisTitusTech/winutil)
 
 [Snipaste](https://www.snipaste.com/) OR [PixPin](https://pixpinapp.com/)
 
-[clock](https://www.52pojie.cn/thread-1952531-1-1.html)
+[alacritty/alacritty: A cross-platform, OpenGL terminal emulator.](https://github.com/alacritty/alacritty)
+
+[dalyIsaac/Whim: Pluggable dynamic window manager for Windows🏗️🪟](https://github.com/dalyIsaac/Whim)
 
 # Resources
 
