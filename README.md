@@ -46,6 +46,8 @@ doubt it might be caused by tpm plugins:
 
 [dalyIsaac/Whim: Pluggable dynamic window manager for Windows🏗️🪟](https://github.com/dalyIsaac/Whim)
 
+[microsoft/PowerToys: Windows system utilities to maximize productivity](https://github.com/microsoft/PowerToys)
+
 # Resources
 
 switching between different system-level CUDA versions in conda: [Managing Multiple CUDA Versions on a Single Machine: A Comprehensive Guide | by Chayma Zatout | Towards Data Science](https://towardsdatascience.com/managing-multiple-cuda-versions-on-a-single-machine-a-comprehensive-guide-97db1b22acdc#b45b)
