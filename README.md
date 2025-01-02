@@ -43,10 +43,13 @@ doubt it might be caused by tpm plugins:
 [Snipaste](https://www.snipaste.com/) OR [PixPin](https://pixpinapp.com/)
 
 [alacritty/alacritty: A cross-platform, OpenGL terminal emulator.](https://github.com/alacritty/alacritty)
+> replace slow win terminal
 
 [dalyIsaac/Whim: Pluggable dynamic window manager for Windows🏗️🪟](https://github.com/dalyIsaac/Whim)
+> combined with [LuisThiamNye/ButteryTaskbar2: Hide the taskbar completely when the Start Menu is not open.](https://github.com/LuisThiamNye/ButteryTaskbar2)
 
 [microsoft/PowerToys: Windows system utilities to maximize productivity](https://github.com/microsoft/PowerToys)
+> Ctrl + Space for spotlight-ish feature in Mac
 
 # Resources
 
