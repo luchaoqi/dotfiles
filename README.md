@@ -45,7 +45,7 @@ doubt it might be caused by tpm plugins:
 [alacritty/alacritty: A cross-platform, OpenGL terminal emulator.](https://github.com/alacritty/alacritty)
 > replace slow win terminal
 
-[dalyIsaac/Whim: Pluggable dynamic window manager for Windows🏗️🪟](https://github.com/dalyIsaac/Whim)
+[glzr-io/glazewm: GlazeWM is a tiling window manager for Windows inspired by i3wm.](https://github.com/glzr-io/glazewm)
 > combined with [LuisThiamNye/ButteryTaskbar2: Hide the taskbar completely when the Start Menu is not open.](https://github.com/LuisThiamNye/ButteryTaskbar2)
 
 [microsoft/PowerToys: Windows system utilities to maximize productivity](https://github.com/microsoft/PowerToys)
