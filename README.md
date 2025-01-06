@@ -48,7 +48,7 @@ One Note's `Docking to desktop` is already there and no need for windows tiling 
 
 [Flow Launcher](https://www.flowlauncher.com/)  
 ~[microsoft/PowerToys: Windows system utilities to maximize productivity](https://github.com/microsoft/PowerToys)~
-> Ctrl + Space for spotlight-ish feature in Mac
+> Ctrl + Space for spotlight-ish feature in Mac, don't forget to set the Explorer engine to `everything` 
 
 # Resources
 
