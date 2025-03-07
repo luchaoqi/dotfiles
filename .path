@@ -17,7 +17,7 @@ export CONDA_AUTO_ACTIVATE_BASE=false
 # cache_path="/playpen-nas-ssd/luchao/software/.cache"
 # # Export cache directory variables
 # export GIT_TMP_DIR="$cache_path/git_tmp"
-# export TMPDIR="$cache_path/pip_tmp"
+# # export TMPDIR="$cache_path/pip_tmp"
 # export PIP_CACHE_DIR="$cache_path/pip"
 # export DNNLIB_CACHE_DIR="$cache_path/dnnlib"
 # export TORCH_HOME="$cache_path/torch"
