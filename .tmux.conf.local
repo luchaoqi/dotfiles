@@ -58,7 +58,7 @@ tmux_conf_new_pane_reconnect_ssh=false
 set -g mouse on
 
 # Use Alt-vim keys without prefix key to switch panes
-# Note to make it work in MACOS - go to iterm2 settings: 1) Keys: Remap left command (⌘) key to ⌥ Left Option 2) Profiles -> Keys -> Left option (⌥) key: Esc+
+# Note to make it work in MACOS - go to iterm2 settings: 1) Keys: Remap left command (⌘) key to ⌥ Left Option 2) Profiles -> Keys -> General: Left option (⌥) key: Esc+ 3) Profiles -> Keys -> Key Bindings: bind ⌥v to `Paste or Send ⌃V`
 bind -n M-h select-pane -L
 bind -n M-j select-pane -D
 bind -n M-k select-pane -U
