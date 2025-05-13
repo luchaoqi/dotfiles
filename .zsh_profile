@@ -1,6 +1,11 @@
 # https://unix.stackexchange.com/questions/167582/why-zsh-ends-a-line-with-a-highlighted-percent-symbol
 PROMPT_EOL_MARK=''
 
+# weird and only happens when I copy-paste cmd in iterm2
+# https://unix.stackexchange.com/questions/685666/zsh-how-do-i-remove-block-prefixes-when-writing-multi-line-statements-in-intera
+setopt prompt_subst
+PS2='${${${(%):-%_}//[^ ]}// /  }    '
+
 if [ -f ~/.aliases ]; then
     . ~/.aliases
 fi
