@@ -1,10 +1,20 @@
 # https://unix.stackexchange.com/questions/167582/why-zsh-ends-a-line-with-a-highlighted-percent-symbol
 PROMPT_EOL_MARK=''
 
-# weird and only happens when I copy-paste cmd in iterm2
+# weird and only happens when I copy-paste the cmd in iterm2
 # https://unix.stackexchange.com/questions/685666/zsh-how-do-i-remove-block-prefixes-when-writing-multi-line-statements-in-intera
 setopt prompt_subst
 PS2='${${${(%):-%_}//[^ ]}// /  }    '
+
+# Option + Left/Right Arrow for word-jump
+bindkey "\e[1;3D" backward-word
+bindkey "\e[1;3C" forward-word
+
+# ESC+b/f fallback
+bindkey "^[b" backward-word
+bindkey "^[f" forward-word
+
+
 
 if [ -f ~/.aliases ]; then
     . ~/.aliases
