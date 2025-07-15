@@ -4,7 +4,8 @@ local max_retry=10
 
 for i in {1..$max_retry}
 do
-    local script=$(echo ~/.vscode-server/bin/*/bin/remote-cli/code(*oc[$i]N))
+    # local script=$(echo ~/.vscode-server/bin/*/bin/remote-cli/code(*oc[$i]N))
+    local script=$(echo ~/.cursor-server/cli/servers/*/server/bin/remote-cli/cursor(*oc[$i]N))
     if [[ -z ${script} ]]
     then
         echo "VSCode remote script not found"
