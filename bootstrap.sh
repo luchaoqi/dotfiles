@@ -129,28 +129,28 @@ cp ~/dotfiles/.zsh_profile ~
 # source ~/.zshrc
 
 
-# install pre-commit if not installed
-if ! [ -x "$(command -v pre-commit)" ]; then
-    echo "pre-commit is not installed, installing pre-commit"
-    if [ -x "$(command -v pip)" ]; then
-        pip install pre-commit --user --no-cache-dir || echo "pip install pre-commit failed"
-        # ensure pre-commit is in PATH
-        omz reload
-    fi
-fi
+# # install pre-commit if not installed
+# if ! [ -x "$(command -v pre-commit)" ]; then
+#     echo "pre-commit is not installed, installing pre-commit"
+#     if [ -x "$(command -v pip)" ]; then
+#         pip install pre-commit --user --no-cache-dir || echo "pip install pre-commit failed"
+#         # ensure pre-commit is in PATH
+#         omz reload
+#     fi
+# fi
 
-# automatically enabling pre-commit if pre-commit is installed
-if [ -x "$(command -v pre-commit)" ]; then
-    # update all pre-commit hooks
-    pre-commit autoupdate
-    if [ -f $HOME/.git-template/hooks/pre-commit ]; then
-        echo "pre-commit is already enabled"
-    elif [ -x "$(command -v git)" ] && [ -x "$(command -v pre-commit)" ]; then
-        git config --global init.templatedir ~/.git-template
-        pre-commit init-templatedir ~/.git-template
-        echo "pre-commit is now enabled by default"
-    fi
-fi
+# # automatically enabling pre-commit if pre-commit is installed
+# if [ -x "$(command -v pre-commit)" ]; then
+#     # update all pre-commit hooks
+#     pre-commit autoupdate
+#     if [ -f $HOME/.git-template/hooks/pre-commit ]; then
+#         echo "pre-commit is already enabled"
+#     elif [ -x "$(command -v git)" ] && [ -x "$(command -v pre-commit)" ]; then
+#         git config --global init.templatedir ~/.git-template
+#         pre-commit init-templatedir ~/.git-template
+#         echo "pre-commit is now enabled by default"
+#     fi
+# fi
 
 # install tldr without root permission if tldr is not installed
 if ! [ -x "$(command -v tldr)" ]; then

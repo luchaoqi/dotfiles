@@ -8,10 +8,10 @@
 	email = lc.qi@outlook.com
 [commit]
   	template = ~/.gitmessage
-[init]
-	# https://pre-commit.com/#automatically-enabling-pre-commit-on-repositories
-	templateDir = ~/.git-template
-	defaultBranch = main
+# [init]
+# 	# https://pre-commit.com/#automatically-enabling-pre-commit-on-repositories
+# 	templateDir = ~/.git-template
+# 	defaultBranch = main
 [core]
 	editor = vi
 	excludesfile = ~/.gitignore_global
